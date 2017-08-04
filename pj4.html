@@ -1,0 +1,78 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate(){
+
+	name=document.frm_register.txt_c_name.value;
+	if(name=="")
+		alert("Please enter your name");
+	pw=document.frm_register.pw.value;
+	if(pw=="")
+		alert("Please enter your password");
+	gender=document.frm_register.gender.value;
+	if(gender=="")
+		alert("Please select gender button");
+		return false;
+}
+
+
+</script>
+</head>
+<body>
+	<form name="frm_register">
+	<table>
+<tr><td colspan="2"><h1 align="center">Customer Registration</h1></td></tr>
+
+
+<tr>
+<td>
+customer name:</td><td><input type="text" name="txt_c_name">
+</td>
+</tr>
+<br><br>
+<tr>
+	<td>
+	password:</td><td><input type="text" name="pw">
+</td>
+
+</tr>
+<br><br>
+<tr>
+	<td>
+		gender:<input type="radio" name="gender" value="male">male<input type="radio" name="gender" value="female">female
+	</td>
+	</tr>
+
+	<tr>
+		<td>
+			address:</td><td><textarea rows="5" cols="20"> </textarea></td></tr>
+			<tr>
+	<td>
+	Telephone no:</td><td><input type="text" name="t">
+</td>
+
+</tr>
+<tr>
+<td>
+	<br><br>
+
+	<form>
+		Hobbies:</td><td><select name="hob">
+		               <option>reading</option>Reading
+		               	<option>1</option>writing
+
+		               	</select>
+
+</form>
+</td>
+</tr>
+<tr>
+	<td>
+		<input type="submit" name="submit" value="submit" onClick="return validate()">
+	</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
